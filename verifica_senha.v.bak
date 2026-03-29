@@ -1,0 +1,12 @@
+module verifica_senha(
+	input [3:0] senha,
+	input confirmar, reset, estado,
+	output senha_valida
+);
+	reg [3:0] senha_atual;
+	always @(*) begin
+		
+	end
+
+
+endmodule

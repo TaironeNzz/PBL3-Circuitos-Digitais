@@ -1,0 +1,19 @@
+module erros(
+	input confirmar,senha_valida, chave_mestra,
+	output reg [1:0] erros
+);
+
+	always @(negdege confirmar) begin
+		if (senha_valida) begin
+			erros <= 2'b00;
+		end else if (erros == 2'b11) begin
+				if (chave_mestra) begin
+					erros <= 2'b00;
+				end else begin
+					erros <= 2'b11;
+				end
+		end else begin
+			erros <= erros + 1;
+		end
+	end
+endmodule

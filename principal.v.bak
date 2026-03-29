@@ -1,0 +1,8 @@
+module principal(
+	input sw0,sw1,sw2,sw3
+	output n
+);
+
+
+
+endmodule

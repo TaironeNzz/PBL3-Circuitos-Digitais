@@ -1,0 +1,7 @@
+module estado_do_cofre(
+	input senha_valida,
+	output [6:0] estadocofre1,estadocofre2,
+	output [6:0] situaçãoerro1,situaçãoerro2
+);
+
+endmodule

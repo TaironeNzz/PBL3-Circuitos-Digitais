@@ -1,0 +1,17 @@
+module estado_de_senha(
+	input ch1,clk,
+	output reg resul,
+	output reg [6:0] seg1,seg2
+);
+	always @(negedge clk) begin
+		if (ch1)
+			seg1 <= 7'b0001000;
+			seg2 <= 7'b0000011;
+			resul <= 1'b1;
+		else 
+			seg1 <= 7'b0001100;
+			seg2 <= 7'b0101111;
+			resul <= 1'b0;
+	end
+
+endmodule
